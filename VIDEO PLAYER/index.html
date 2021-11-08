@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="mi primer proyecto como desrrollador web"> 
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <title>Video Player</title>
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        
+        <div class="player">
+            <video id="video" poster="./images/poster.jpg"  controls src="./videos/lofi.mp4"></video>
+    
+            <div class="player-overlay">
+                <h2 class="player-tittle">Música para programar</h2>
+
+                <div class="player-actions">
+    
+                    <button class="button" id="backward" aria-level="retroceder 10s" title="retroceder 10s"></button>
+                    <button class="button"  id="play" aria-level="reproducir" title="reproducir"></button>
+                    <button class="button" hidden id="pause" aria-level="pausar" title="pausar"></button>
+                    <button class="button" id="forward" aria-level="avanzar 10s" title="avanzar 10s"></button>   
+                    
+                </div>
+                <div class="player-progres">
+                    
+                    <input id="progress" type="range" min="0" value="0" step="1">
+    
+                </div>
+            </div>
+
+    
+        </div>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
